@@ -1,4 +1,4 @@
-import { Outlet, Link, useNavigate  } from "react-router-dom";
+import { Outlet, Link, useNavigate, useLocation  } from "react-router-dom";
 import React, { useRef, useState, useEffect } from 'react';
 import { Link as ScrollLink, animateScroll } from 'react-scroll';
 
@@ -11,6 +11,7 @@ const Layout = () => {
     const [dMode, setDMode] = useState(false);
 
     const navigate = useNavigate();
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -38,7 +39,9 @@ const Layout = () => {
             setDMode(false);
         }
         console.log("dmode after: ", dMode);
-        navigate("/", {state : dMode});
+        console.log("location: ", location)
+        navigate(location.pathname, {state : dMode});
+        // navigate("/projects", {state : dMode});
     }
 
     return (
@@ -57,7 +60,7 @@ const Layout = () => {
                                     smooth={true}
                                     duration={100}
                                     onClick={scrollToSpecificElement}> 
-                                    <h5 className="font-scode text-white mb-0">About me</h5> 
+                                    <h5 className="font-scode text-white mb-0">About</h5> 
                                 </Link>
                             </li>
                             <li className="nav-item m-3">

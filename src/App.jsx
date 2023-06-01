@@ -10,17 +10,18 @@ import { Outlet, Link } from "react-router-dom";
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
-  // const [dMode, setDMode] = useState(useLocation().state);
-
   const dMode = useLocation().state;
-  // const location = useLocation();
-  // setDMode(location.state);
-  // console.log("dMode: ", dMode);
 
   useEffect(() => {
+    // const parallaxConts = document.querySelectorAll(".bio-cont-sub");
+
     const handleScroll = () => {
       const position = window.pageYOffset;
       setScrollPosition(position);
+
+      // Array.from(parallaxConts).map((cont) => {
+      //   cont.style.transform = `translate(0%, -${position * 0.03}%)`;
+      // })
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -78,17 +79,19 @@ function App() {
         </span>
         <span id="bio-span" style={{backgroundImage: `url(${codingPhoto})`, opacity: scrollPosition / 500, backgroundSize: 'cover', backgroundPosition: 'center'}}>
           <div className="bio-cont">
-            <div className="bio-text-cont">
-              <h6 className="font-scode">I was born and raised in Addis Ababa, Ethiopia. I later moved to New York City to pursue my BA in Computer Science at Columbia University.</h6>
-            </div>
-            <div className="bio-text-cont">
-              <h6 className="font-scode">Having just completed my second year of college, I am eager to apply my knowledge from class into solving real problems in real working conditions.</h6>
-            </div>
-            <div className="bio-text-cont">
-              <h6 className="font-scode">I am particularly interested in <u>Software Engineering</u>, <u>Fullstack Web Development</u>, and <u>Computer Vision</u>.</h6>
-            </div>
-            <div className="bio-text-cont">
-              <h6 className="font-scode">My short-term goal is to gain foundational skills in software engineering. In the long-term, I plan to work to increase education access to disadvantaged communities by building software solutions.</h6>
+            <div className='bio-cont-sub'>
+              <div className="bio-text-cont">
+                <h6 className="font-scode">I was born and raised in Addis Ababa, Ethiopia. I later moved to New York City to pursue my BA in Computer Science at Columbia University.</h6>
+              </div>
+              <div className="bio-text-cont">
+                <h6 className="font-scode">Having just completed my second year of college, I am eager to apply my knowledge from class into solving real problems in real working conditions.</h6>
+              </div>
+              <div className="bio-text-cont">
+                <h6 className="font-scode">I am particularly interested in <u>Software Engineering</u>, <u>Fullstack Web Development</u>, and <u>Computer Vision</u>.</h6>
+              </div>
+              <div className="bio-text-cont">
+                <h6 className="font-scode">My short-term goal is to gain foundational skills in software engineering. In the long-term, I plan to work to increase education access to disadvantaged communities by building software solutions.</h6>
+              </div>
             </div>
           </div>
           {/* <div className='scroll-up-cont'>

@@ -4,7 +4,7 @@
   padding: 0;
   text-align: center;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .layout {
@@ -69,7 +69,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 75px 10px 10px 0;
+  padding: 0;
 }
 
 .darkmode {
@@ -88,6 +88,7 @@
   align-items: center;
   flex-wrap: wrap;
   text-align: left;
+  margin: auto;
 }
 
 .intro-name-cont {
@@ -159,6 +160,10 @@
 	}
 }
 
+.scroll:hover {
+  cursor: pointer;
+}
+
 .intro-facade-cont {
   width: 100%;
   height: 1600px;
@@ -175,16 +180,23 @@
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  align-items: flex-start;
   padding-right: 10px;
+}
+
+.bio-cont-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 .bio-text-cont {
   background: rgba(13, 59, 102, 0.9);
   color: white;
   padding: 10px;
-  margin: 5px;
+  margin: 10px 0;
   max-width: 60%;
   border-radius: 2px;
   text-align: right;
