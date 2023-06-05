@@ -14,6 +14,7 @@ function App() {
 
   useEffect(() => {
     // const parallaxConts = document.querySelectorAll(".bio-cont-sub");
+    
 
     const handleScroll = () => {
       const position = window.pageYOffset;

@@ -7,6 +7,7 @@ import Layout from "./routes/Layout"
 import Projects from "./routes/Projects"
 import ProjectPage from './routes/ProjectPage'
 import Sidebar from './routes/Sidebar'
+import Contact from './routes/Contact'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route index={false} element={<Sidebar />}>
             <Route index={false} path="/projects/:id" element={<ProjectPage />} />
           </Route>
+          <Route index={false} path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>

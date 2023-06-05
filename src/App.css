@@ -26,6 +26,7 @@
   background-color: #0D3B66;
   color: white;
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .top-nav.hidden {
@@ -40,6 +41,23 @@
 .navbar-sub {
   display: flex;
   justify-content: space-around;
+}
+
+.navbar-logo {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+}
+
+.navbar-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-sub-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .font-pstart {

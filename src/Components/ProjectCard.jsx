@@ -29,7 +29,9 @@ const ProjectCard = (props) => {
             <div className='project-btns-cont font-scode'>                 
                 <Link to={"/projects/" + props.data.id} className="project-btn">More</Link>                 
                 <div className='project-btns-cont-sub'>
-                    <a className="project-btn" href={props.data.linkSrc}>Link</a>
+                    {(props.data.linkSrc.length != 0) &&
+                        <a className="project-btn" href={props.data.linkSrc}>Link</a>
+                    } 
                     <a className="project-btn" href={props.data.repoSrc}>Repo</a>
                 </div>
             </div> 
