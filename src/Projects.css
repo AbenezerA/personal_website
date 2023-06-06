@@ -109,6 +109,7 @@
 
 .project-media {
     border-radius: 10px;
+    max-height: 500px;
 }
 
 .project-btns-cont {
