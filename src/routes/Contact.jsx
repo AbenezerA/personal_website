@@ -21,7 +21,6 @@ const Contact = () => {
                         <a className='contact-table-item' href="https://www.linkedin.com/in/abenezer-amanuel/">LinkedIn</a>
                         <a className='contact-table-item' href="https://github.com/AbenezerA">GitHub</a>
                         <a className='contact-table-item' href="https://mail.google.com/mail/?view=cm&source=mailto&to=abitad2015@gmail.com">Email</a>
-                        <a className='contact-table-item' href="#">Twitter</a>
                         <a className='contact-table-item' href="https://www.facebook.com/AbeniDC/">Facebook</a>
                     </div>
                 </div>
