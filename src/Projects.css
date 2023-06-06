@@ -48,7 +48,7 @@
 .projects-cont {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 50px 0;
 }
