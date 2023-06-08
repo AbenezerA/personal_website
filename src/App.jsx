@@ -82,13 +82,13 @@ function App() {
           <div className="bio-cont">
             <div className='bio-cont-sub'>
               <div className="bio-text-cont">
-                <h6 className="font-scode">I was born and raised in Addis Ababa, Ethiopia. I later moved to New York City to pursue my BA in Computer Science at Columbia University.</h6>
+                <h6 className="font-scode">Born and raised in Addis Ababa, Ethiopia. Later moved to New York City to pursue my BA in Computer Science at Columbia University.</h6>
               </div>
               <div className="bio-text-cont">
                 <h6 className="font-scode">Having just completed my second year of college, I am eager to apply my knowledge from class into solving real problems in real working conditions.</h6>
               </div>
               <div className="bio-text-cont">
-                <h6 className="font-scode">I am particularly interested in <u>Software Engineering</u>, <u>Fullstack Web Development</u>, and <u>Computer Vision</u>.</h6>
+                <h6 className="font-scode">Particularly interested in <u>Software Engineering</u>, <u>Fullstack Web Development</u>, and <u>Computer Vision</u>.</h6>
               </div>
               <div className="bio-text-cont">
                 <h6 className="font-scode">My short-term goal is to gain foundational skills in software engineering. In the long-term, I plan to work to increase education access to disadvantaged communities by building software solutions.</h6>
