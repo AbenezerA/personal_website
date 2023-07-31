@@ -81,7 +81,7 @@ const Layout = () => {
                                 <Link to="/contact" > <h5 className=" font-scode text-white mb-0">Contact</h5> </Link>
                             </li>
                             <li className="nav-item m-3">
-                                <a href={resume} > <h5 className=" font-scode text-white mb-0">Resume</h5> </a>
+                                <a href="https://abenezeramanuel.netlify.app/"> <h5 className=" font-scode text-white mb-0">Resume</h5> </a>
                             </li>
                             <li className="nav-item m-3">
                                 <Link to="https://www.linkedin.com/in/abenezer-amanuel/"> <h5 className=" font-scode text-white mb-0">LinkedIn</h5> </Link>
